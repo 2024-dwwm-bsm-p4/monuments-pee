@@ -42,7 +42,7 @@ select {
     font: inherit;
 }
 
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -50,7 +50,7 @@ h4,
 h5,
 h6 {
     overflow-wrap: break-word;
-}
+} */
 
 button {
     background-color: unset;
@@ -65,4 +65,40 @@ a {
 #root,
 #__next {
     isolation: isolate;
+}
+
+.boutons {
+    columns: 5 auto;
+}
+
+.bouton{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    margin:  0px 15px 15px 15px;
+
+}
+
+.container {
+    columns: 5 auto;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+h1 {
+    margin: 50px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 30px;
+}
+
+#phraseclic {
+    font-weight: bold;
+    text-decoration: underline;
 }
