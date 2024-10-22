@@ -33,7 +33,7 @@ function fonction(monument){
     }
     //actions de la fonction
 
-    document.querySelector("#localisation").textContent=localisation;
+    document.querySelector("#localisation").innerHTML=localisation;
     document.querySelector("#edifice").textContent=edifice;
     document.querySelector("#descriptifMonument").textContent=descriptifMonument;
 
