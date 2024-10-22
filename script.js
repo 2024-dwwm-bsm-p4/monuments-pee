@@ -4,7 +4,7 @@ let descriptifMonument;
 
 
 function fonction(monument){
-    
+
     if(monument==='tourEiffel') {
         edifice="Tour Eiffel";
         localisation="Paris,<strong>France</strong>";
@@ -33,6 +33,9 @@ function fonction(monument){
     }
     //actions de la fonction
 
+    document.querySelector("#localisation").textContent=localisation;
+    document.querySelector("#edifice").textContent=edifice;
+    document.querySelector("#descriptifMonument").textContent=descriptifMonument;
 
     }
 
