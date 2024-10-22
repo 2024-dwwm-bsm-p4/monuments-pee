@@ -80,6 +80,8 @@ a {
     border-radius: 5px;
     padding: 15px;
     margin: 0 auto 10px auto;
+    cursor: pointer; 
+  
 
 }
 
@@ -91,6 +93,7 @@ a {
 .image {
     width: 100%;
     aspect-ratio: 1/1;
+    cursor: pointer; 
     
     
 }
@@ -121,4 +124,10 @@ p {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
+}
+
+#pays {
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
 }
