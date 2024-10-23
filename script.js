@@ -1,6 +1,13 @@
 let localisation;
 let edifice;
 let descriptifMonument;
+const image = document.querySelector(".image");
+console.log(image);
+const images = document.querySelectorAll(".image");
+console.log(images);
+
+
+
 
 
 function fonction(monument){
@@ -36,8 +43,28 @@ function fonction(monument){
     document.querySelector("#localisation").innerHTML=localisation;
     document.querySelector("#edifice").textContent=edifice;
     document.querySelector("#descriptifMonument").textContent=descriptifMonument;
-
+    document.querySelector(".texte").style.display="block";
+   
+    
     }
+
+
+    images.forEach(image => {
+        // image représente chaque image dans images
+        image.addEventListener("click", () => {
+            // Applique la classe 'filtered' à toutes les photos
+            images.forEach(image => image.classList.add("filtre"));
+            // Retire la classe 'filtered' de la photo cliquée
+            image.classList.remove("filtre");
+            document.querySelector(".carte").style.display="block";
+            
+            
+        });
+    });
+    
+
+
+
 
 
 

@@ -42,20 +42,7 @@ select {
     font: inherit;
 }
 
-/* p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-} */
 
-button {
-    background-color: unset;
-    border: unset;
-}
 
 a {
     text-decoration: unset;
@@ -93,9 +80,11 @@ a {
 .image {
     width: 100%;
     aspect-ratio: 1/1;
-    cursor: pointer; 
+    cursor: pointer;
+     } 
     
-    
+.filtre {
+    filter: grayscale(100%);       
 }
 
 h1 {
@@ -104,17 +93,20 @@ h1 {
 }
 
 p {
-    text-align: center;
+   
     margin: 30px;
 }
 
 #phraseclic {
     font-weight: bold;
     text-decoration: underline;
+    text-align: center;
 }
 
 .descriptif {
+    
     overflow-wrap: break-word;
+    overflow: hidden;
     background-color: var(--black);
     color: var(--white);
     width: 100%;
@@ -124,7 +116,25 @@ p {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     
+}
 
+@keyframes passage {
+    from {
+        transform: translateX(100px);
+        
+    }
+
+    to {
+        transform: translateX(0);
+       
+    }
+}
+
+.texte {
+    animation-duration: 3s; 
+    animation-name: passage; 
+    display: none;
+      
 }
 
 #pays {
@@ -135,4 +145,23 @@ p {
 
 .image {
  transition: 3s ease;
+}
+
+#edifice {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#localisation {
+    font-size: 23px;
+}
+.carte {
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    display: none;
+}
+
+.size-6 {
+    color:red;
 }
