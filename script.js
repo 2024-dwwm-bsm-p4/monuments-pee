@@ -5,6 +5,9 @@ const image = document.querySelector(".image");
 console.log(image);
 const images = document.querySelectorAll(".image");
 console.log(images);
+const pin = document.querySelector(".pin");
+console.log(pin);
+// Variable pour leaflet
 
 
 
@@ -16,6 +19,7 @@ function fonction(monument){
         edifice="Tour Eiffel";
         localisation="Paris,<strong>France</strong>";
         descriptifMonument="La tour Eiffel est une tour de fer puddlé de 330 m3 de hauteur (avec antennes) située à Paris, à l'extrémité nord-ouest du parc du Champ-de-Mars en bordure de la Seine dans le 7e arrondissement. Son adresse officielle est 5, avenue Anatole-France.";
+        
     
 
     }else if(monument === 'NotreDame') {
@@ -27,6 +31,7 @@ function fonction(monument){
         edifice="Arc de Triomphe";
         localisation="Paris,<strong>France</strong>";
         descriptifMonument="Un arc de triomphe, et plus généralement un arc monumental, est une structure libre monumentale enjambant une voie et utilisant la forme architecturale de l'arc avec un ou plusieurs passages voûtés. Ce type d'ouvrage est un des éléments les plus caractéristiques de l'architecture romaine, utilisé pour commémorer les généraux victorieux ou les évènements importants comme le décès d'un membre de la famille impériale ou royale, l'accession au trône d'un nouvel empereur ou encore les fondations de nouvelles colonies, la construction d'une route ou d'un pont.";
+
 
     }else if(monument==='MontSaintMichel'){
         edifice="Mont Saint-Michel";
@@ -57,6 +62,7 @@ function fonction(monument){
             // Retire la classe 'filtered' de la photo cliquée
             image.classList.remove("filtre");
             document.querySelector(".carte").style.display="block";
+            document.querySelector(".pin").style.display="block";
             
             
         });

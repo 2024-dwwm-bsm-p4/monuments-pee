@@ -109,8 +109,7 @@ p {
     overflow: hidden;
     background-color: var(--black);
     color: var(--white);
-    width: 100%;
-    aspect-ratio: 1/0.25;
+    min-width: auto;
     margin-top: 30px;
     margin-bottom: 20px;
     border-bottom-left-radius: 5px;
@@ -159,9 +158,10 @@ p {
     width: 20vw;
     height: 20vw;
     margin: auto;
-    display: none;
+    display: none; 
 }
 
-.size-6 {
-    color:red;
+
+#map { 
+    height: 180px; 
 }
